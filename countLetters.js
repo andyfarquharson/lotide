@@ -20,7 +20,6 @@ const countLetters = function(sentence) {
       results[char]++;
     }
   }
-
   return results;
 };
 

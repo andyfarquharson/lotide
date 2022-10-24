@@ -11,20 +11,23 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(sentence) {
   let results = {};
-  sentence = sentence.replace(" ", "");
-  for (let char of sentence) {
+  // sentence = sentence.replace(" ", "");
+  for (const char of sentence) {
+    if (char === ' '){
+    continue;
+    }
     // console.log(char);
     if (!results[char]) {
-      results[char] = 1;
-    } else {
-      results[char]++;
-    }
+      results[char] = 0;
+    } 
+    results[char]++;
   }
   return results;
 };
 
 const result1 = countLetters("LHL LHL");
-
+const result2 = countLetters("Hello World");
+console.log(countLetters(result2));
 assertEqual(result1["L"], 4);
 assertEqual(result1["H"], 2);
 assertEqual(result1["a"], 1);

@@ -40,6 +40,9 @@ const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
   for (i = 0; i < sentence.length; i++) {
+    if (i === ' ') {
+      continue;
+    }
     if (!results[sentence[i]]) {
       results[sentence[i]] = [i];
       // console.log()
@@ -47,8 +50,6 @@ const letterPositions = function(sentence) {
       results[sentence[i]].push(i);
     }
   }
-  
-  
   return results;
 };
 

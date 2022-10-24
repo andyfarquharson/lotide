@@ -7,5 +7,5 @@ describe('#tail', () => {
   });
   it("should return [ 2, 3, 4, 5, 6] for input of [ 1, 2, 3, 4, 5, 6]", () => {
     assert.deepEqual(tail([1, 2, 3, 4, 5, 6]), [ 2, 3, 4, 5, 6]);
-  })
-})
+  });
+});

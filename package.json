@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@andyfarquharson/lotide",
   "version": "1.0.0",
   "description": "This is our own version of lodash",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/andyfarquharson/lotide.git"
   },
-  "author": "Andy",
+  "author": "andyfarquharson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/andyfarquharson/lotide/issues"
